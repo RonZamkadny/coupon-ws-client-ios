@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		7D2E9F89160F32C3008F5FED /* com_ronx_icouponAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E9F88160F32C3008F5FED /* com_ronx_icouponAppDelegate.m */; };
 		7D2E9F8C160F32C3008F5FED /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E9F8A160F32C3008F5FED /* MainStoryboard_iPhone.storyboard */; };
 		7D2E9F8F160F32C3008F5FED /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E9F8D160F32C3008F5FED /* MainStoryboard_iPad.storyboard */; };
-		7D2E9F92160F32C3008F5FED /* com_ronx_icouponFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E9F91160F32C3008F5FED /* com_ronx_icouponFirstViewController.m */; };
+		7D2E9F92160F32C3008F5FED /* CouponListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E9F91160F32C3008F5FED /* CouponListViewController.m */; };
 		7D2E9F94160F32C3008F5FED /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E9F93160F32C3008F5FED /* first.png */; };
 		7D2E9F96160F32C3008F5FED /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2E9F95160F32C3008F5FED /* first@2x.png */; };
 		7D2E9F99160F32C3008F5FED /* com_ronx_icouponSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E9F98160F32C3008F5FED /* com_ronx_icouponSecondViewController.m */; };
@@ -51,8 +51,8 @@
 		7D2E9F88160F32C3008F5FED /* com_ronx_icouponAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_ronx_icouponAppDelegate.m; sourceTree = "<group>"; };
 		7D2E9F8B160F32C3008F5FED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		7D2E9F8E160F32C3008F5FED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		7D2E9F90160F32C3008F5FED /* com_ronx_icouponFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com_ronx_icouponFirstViewController.h; sourceTree = "<group>"; };
-		7D2E9F91160F32C3008F5FED /* com_ronx_icouponFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_ronx_icouponFirstViewController.m; sourceTree = "<group>"; };
+		7D2E9F90160F32C3008F5FED /* CouponListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CouponListViewController.h; sourceTree = "<group>"; };
+		7D2E9F91160F32C3008F5FED /* CouponListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CouponListViewController.m; sourceTree = "<group>"; };
 		7D2E9F93160F32C3008F5FED /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		7D2E9F95160F32C3008F5FED /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		7D2E9F97160F32C3008F5FED /* com_ronx_icouponSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com_ronx_icouponSecondViewController.h; sourceTree = "<group>"; };
@@ -100,6 +100,7 @@
 				7D2E9F75160F32C3008F5FED /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		7D2E9F75160F32C3008F5FED /* Products */ = {
 			isa = PBXGroup;
@@ -128,8 +129,8 @@
 				7D2E9F88160F32C3008F5FED /* com_ronx_icouponAppDelegate.m */,
 				7D2E9F8A160F32C3008F5FED /* MainStoryboard_iPhone.storyboard */,
 				7D2E9F8D160F32C3008F5FED /* MainStoryboard_iPad.storyboard */,
-				7D2E9F90160F32C3008F5FED /* com_ronx_icouponFirstViewController.h */,
-				7D2E9F91160F32C3008F5FED /* com_ronx_icouponFirstViewController.m */,
+				7D2E9F90160F32C3008F5FED /* CouponListViewController.h */,
+				7D2E9F91160F32C3008F5FED /* CouponListViewController.m */,
 				7D2E9F93160F32C3008F5FED /* first.png */,
 				7D2E9F95160F32C3008F5FED /* first@2x.png */,
 				7D2E9F97160F32C3008F5FED /* com_ronx_icouponSecondViewController.h */,
@@ -221,7 +222,7 @@
 				ORGANIZATIONNAME = "RONX Reigns";
 			};
 			buildConfigurationList = 7D2E9F6E160F32C2008F5FED /* Build configuration list for PBXProject "coupon-ws-ios-client" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -286,7 +287,7 @@
 			files = (
 				7D2E9F85160F32C3008F5FED /* main.m in Sources */,
 				7D2E9F89160F32C3008F5FED /* com_ronx_icouponAppDelegate.m in Sources */,
-				7D2E9F92160F32C3008F5FED /* com_ronx_icouponFirstViewController.m in Sources */,
+				7D2E9F92160F32C3008F5FED /* CouponListViewController.m in Sources */,
 				7D2E9F99160F32C3008F5FED /* com_ronx_icouponSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +354,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -368,6 +370,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +385,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -389,7 +394,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -402,7 +409,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coupon-ws-ios-client/coupon-ws-ios-client-Prefix.pch";
 				INFOPLIST_FILE = "coupon-ws-ios-client/coupon-ws-ios-client-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -413,7 +423,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coupon-ws-ios-client/coupon-ws-ios-client-Prefix.pch";
 				INFOPLIST_FILE = "coupon-ws-ios-client/coupon-ws-ios-client-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +484,7 @@
 				7D2E9FB7160F32C3008F5FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D2E9FB8160F32C3008F5FED /* Build configuration list for PBXNativeTarget "coupon-ws-ios-clientTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +493,7 @@
 				7D2E9FBA160F32C3008F5FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
